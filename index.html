@@ -1,60 +1,48 @@
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>神聖なる懺悔室</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
-    <script type="importmap">
-{
-  "imports": {
-    "@google/genai": "https://esm.sh/@google/genai@^0.12.0",
-    "marked": "https://esm.sh/marked@^16.0.0"
-  }
-}
-</script>
-<link rel="stylesheet" href="/index.css">
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>神聖なる懺悔室</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+  </head>
 <body>
-    <div id="app">
-        <header>
-            <h1>神聖なる懺悔室</h1>
-            <p class="subtitle">~ Sister Maria's Confession Room ~</p>
-        </header>
-        <div class="separator">✝</div>
+  <div id="app">
+    <header>
+      <h1>神聖なる懺悔室</h1>
+      <p class="subtitle">~ Sister Maria's Confession Room ~</p>
+    </header>
+    <div class="separator">✝</div>
 
-        <main id="main-content">
-            <div id="intro-screen">
-                <div class="info-box">
-                    <p>ここは神聖なる懺悔室。罪深き魂が救いを求める場所…</p>
-                    <p>シスターはどのような悩みでも相談に乗ってくれます。</p>
-                </div>
-                <div class="info-box online-notice">
-                    <p>シスター・マリアが、あなたのお越しをお待ちしております。</p>
-                </div>
-                <button id="enter-button" aria-label="懺悔を始める">懺悔を始める</button>
-            </div>
+    <main id="main-content">
+      <div id="intro-screen">
+        <div class="info-box">
+          <p>ここは神聖なる懺悔室。罪深き魂が救いを求める場所…</p>
+          <p>シスターはどのような悩みでも相談に乗ってくれます。</p>
+        </div>
+        <div class="info-box online-notice">
+          <p>シスター・マリアが、あなたのお越しをお待ちしております。</p>
+        </div>
+        <button id="enter-button" aria-label="懺悔を始める">懺悔を始める</button>
+      </div>
 
-            <div id="chat-screen" class="hidden">
-                <div id="message-list" role="log" aria-live="polite"></div>
-                <form id="chat-form" aria-label="チャットフォーム">
-                    <input type="text" id="chat-input" placeholder="悩みを打ち明ける..." autocomplete="off" aria-label="チャットメッセージ入力">
-                    <button type="submit" aria-label="送信">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-send"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
-                    </button>
-                </form>
-            </div>
-        </main>
+      <div id="chat-screen" class="hidden">
+        <div id="message-list" role="log" aria-live="polite"></div>
+        <form id="chat-form" aria-label="チャットフォーム">
+          <input type="text" id="chat-input" placeholder="悩みを打ち明ける..." autocomplete="off" aria-label="チャットメッセージ入力">
+          <button type="submit" aria-label="送信">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-send"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+          </button>
+        </form>
+      </div>
+    </main>
 
-        <footer>
-            <p class="footer-text">慈悲深きシスターが汝を待ち給う</p>
-        </footer>
-    </div>
-    <script type="module" src="index.js"></script>
-<script type="module" src="/index.tsx"></script>
+    <footer>
+      <p class="footer-text">慈悲深きシスターが汝を待ち給う</p>
+    </footer>
+  </div>
+  <script type="module" src="/index.tsx"></script>
 </body>
 </html>
