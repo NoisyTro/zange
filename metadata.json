@@ -1,0 +1,6 @@
+
+{
+  "name": "神聖なる懺悔室 (Sacred Confession Room)",
+  "description": "Chat with Sister Maria, an AI, in a virtual confession room.",
+  "entrypoint": "index.html"
+}
